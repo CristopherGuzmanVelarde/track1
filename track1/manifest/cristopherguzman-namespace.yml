@@ -1,0 +1,8 @@
+# kubectl apply -f namespace.yml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cristopherguzman-namespace
+  labels:
+      name: cristopherguzman-namespace
+      app: microservice

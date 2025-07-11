@@ -1,0 +1,19 @@
+# kubectl apply -f deployment.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cristopherguzman-deployment
+  namespace: cristopherguzman-namespace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice
+  template:
+    metadata:
+      labels:
+        app: microservice
+    spec:
+      containers:
+      - name: microservice
+        image: cristopherguzman/cristopher-guzman:latest

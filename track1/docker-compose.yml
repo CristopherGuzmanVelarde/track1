@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  microservicio:
+    image: cristopherguzman/cristopher-guzman:latest
+    ports:
+      - "8087:8087"
+    environment:
+      - PORT=8087
